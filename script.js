@@ -105,7 +105,7 @@ const order = document.querySelector(".text").value;
 
 const form = document.querySelector("form")
 form.addEventListener("submit",function(){
-    const url = `https://wa.me/08105757294?text=Name${formName}%20PhoneNumber:${phone}%20Order${order}`;
+    const url = `https://wa.me/08105757294?text=Name${formName}%0aPhoneNumber:${phone}%0aOrder${order}%0a`;
     window.open(url,"_blank").focus()
     formName.value = ``
     phone.value = ``;
