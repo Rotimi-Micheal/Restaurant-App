@@ -23,9 +23,9 @@ body {
     background-color: black;
     text-align: center;
   z-index: 9999;
-  font-family: sans-serif,monospace;
   font-size: 3rem;
-  color: palevioletred;
+  color: gold;
+  font-family: 'Playfair Display', serif;
 }
 .loader::after {
   content: "\2026";
@@ -34,6 +34,7 @@ body {
   vertical-align: bottom;
   animation: dots steps(4,end) 2s infinite;
   width: 0px;
+  color: red;
 }
 
 @keyframes dots {
