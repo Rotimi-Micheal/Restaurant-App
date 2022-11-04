@@ -7,9 +7,10 @@ const allSection = document.querySelectorAll(".section")
 const animateEl = document.querySelectorAll(".animation");
 const footerLinks = document.querySelector(".footer-links");
 const header = document.querySelector(".header");
-
 const spinner = document.querySelector(".loader");
 const main = document.querySelector(".main");
+const orderNow = document.querySelector(".home-button")
+const orderSection = document.querySelector(".formContainer");
 
 const init = () => {
   setTimeout(() => {
@@ -20,6 +21,11 @@ const init = () => {
   }, 4000);
 };
 init();
+
+orderNow.addEventListener("click",function(e){
+    e.preventDefault()
+    orderSection.scrollIntoView({behavior: `smooth`})
+})
 
 const revealSticky = function (entries) {
     const [entry] = entries
