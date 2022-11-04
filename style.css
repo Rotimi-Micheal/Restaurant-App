@@ -331,8 +331,8 @@ body {
 
 .slide-show {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: stretch;
+    justify-content: space-evenly;
     width: 34%;
     overflow: hidden;
     height: 100%;
@@ -341,15 +341,15 @@ body {
 
 .flexxy {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: stretch;
+    justify-content: space-evenly;
     width:100%;
 }
 
 .slide {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: space-evenly;
     transition:  transform 1s;
 }
 

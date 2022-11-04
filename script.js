@@ -10,7 +10,7 @@ const header = document.querySelector(".header");
 
 const revealSticky = function (entries) {
     const [entry] = entries
-    console.log(entry);
+    // console.log(entry);
     if (!entry.isIntersecting) nav.classList.add("sticky")
     else nav.classList.remove("sticky");
 }
@@ -93,21 +93,23 @@ const gotoSlide = function (slide) {
 };
 
 setInterval(()=> {
-   const slide = curSlide > maxslide - 1 ? curSlide = 0 : curSlide++ 
+   const slide = curSlide > maxslide  ? curSlide = 0 : curSlide++ 
     gotoSlide(slide);
 },1000)
 
 
-const formName = document.querySelector(".name-input").value;
-const phone = document.querySelector(".number-input").value;
-const order = document.querySelector(".text").value;
 
 
 const form = document.querySelector("form")
 form.addEventListener("submit",function(){
-    const url = `https://wa.me/08105757294?text=Name${formName}%0aPhoneNumber:${phone}%0aOrder${order}%0a`;
+    const formName = document.querySelector(".name-input").value;
+    const phone = document.querySelector(".number-input").value;
+    const order = document.querySelector(".text").value;
+
+    const url = `https://Wa.me/2348105757294?text=name:${formName}%0aphoneNumber:${phone}%0aorder:${order}%0a`;
     window.open(url,"_blank").focus()
     formName.value = ``
     phone.value = ``;
     order.value = ``;
 })
+
