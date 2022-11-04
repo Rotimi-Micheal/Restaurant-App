@@ -270,7 +270,7 @@ body {
 }
 
 .orderBtn {
-    background: white;
+    /* background: white; */
     padding: .75rem;
     border-radius: 10px;
 }
@@ -655,7 +655,7 @@ body {
     }
 }
 
-@media (max-width : 670px) {
+@media (max-width : 388px) {
 
     body {
         font-size: 1.5rem;
@@ -678,5 +678,22 @@ body {
     .menu {
       margin-top: 700px;
     } 
-    
+}
+
+@media (max-width: 400px) {
+    .menuContainer {
+        margin-top: 950px;
+    }
+
+    .slide-show {
+        margin-top: 350px;
+    }
+
+    .secondMenu-container {
+        margin-top: 200px;
+    }
+
+    .numbers {
+        margin-top: 300px;
+    }
 }
