@@ -714,18 +714,18 @@ body {
 
 @media (max-width: 468px) {
     .menuContainer {
-        margin-top: 700px;
+        margin-top: 800px;
     }
 
     .slide-show {
-        margin-top: 250px;
+        margin-top: 350px;
     }
 
     .secondMenu-container {
-        margin-top: 100px;
+        margin-top: 200px;
     }
 
     .numbers {
-        margin-top: 150px;
+        margin-top: 300px;
     }
 }
