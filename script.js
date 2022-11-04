@@ -8,6 +8,19 @@ const animateEl = document.querySelectorAll(".animation");
 const footerLinks = document.querySelector(".footer-links");
 const header = document.querySelector(".header");
 
+const spinner = document.querySelector(".loader");
+const main = document.querySelector(".main");
+
+const init = () => {
+  setTimeout(() => {
+    spinner.style.display = `none`;
+    spinner.style.opacity = 0;
+    main.style.display = `block`;
+    setTimeout(() => (main.style.opacity = 1), 500);
+  }, 4000);
+};
+init();
+
 const revealSticky = function (entries) {
     const [entry] = entries
     // console.log(entry);
